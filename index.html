@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <style>
+      .wrap {
+        width: 1200px;
+        margin: calc(100% - 95%) auto 0;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      img {
+        width: 15%;
+        vertical-align: bottom;
+      }
+      h1 {
+        font-size: 77px;
+        font-weight: 900;
+        color: #666;
+      }
+      h4 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 44px;
+      }
+      nav {
+        width: 230px;
+        margin: 0 auto;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+      li {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        position: relative;
+      }
+      li a {
+        display: inline-block;
+        width: 160px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #aaa;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-left: 10px;
+        position: relative;
+      }
+      a:hover {
+        background-color: #0af;
+      }
+      li a::before,
+      li a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      li ~ li a::before {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        top: -25px;
+      }
+      li ~ li a::after {
+        width: 0;
+        border-top: 10px solid #ccc;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        top: -15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <img src="./images/Flex_logo.png" alt="flex-logo" />
+        <h1>修練時光屋</h1>
+      </header>
+      <!-- <h4>網站地圖</h4> -->
+      <nav>
+        <ul>
+          <li>
+            第一關<a href="./1. cards-side-by-side/index.html" target="_blank"
+              >並排卡片</a
+            >
+          </li>
+          <li>第二關<a href="javascript:;" target="_blank">雙欄排版</a></li>
+          <li>第三關<a href="javascript:;" target="_blank">雙欄選單設計</a></li>
+          <li>第四關<a href="javascript:;" target="_blank">表頭表尾設計</a></li>
+          <li>第五關<a href="javascript:;" target="_blank">常見三種排版</a></li>
+          <li>第六關<a href="javascript:;" target="_blank">圖文並排</a></li>
+          <li>第七關<a href="javascript:;" target="_blank">首頁橫幅排版</a></li>
+          <li>第八關<a href="javascript:;" target="_blank">圖文並排設計</a></li>
+          <li>第九關<a href="javascript:;" target="_blank">訂單明細</a></li>
+          <li>第十關<a href="javascript:;" target="_blank">產品列表</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
