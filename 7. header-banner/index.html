@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁橫幅排版</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <style>
+      body {
+        background-color: #999;
+      }
+      .wrap {
+        width: 1146px;
+        margin-top: 0;
+      }
+      .banner {
+        background-color: #e7eeea;
+        padding: 296px 0;
+      }
+      .banner img {
+        display: block;
+        margin: 0 auto;
+      }
+      .banner h1 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #37523d;
+        margin-top: 30px;
+        text-align: center;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 48px 0 58px;
+        background-color: #fff;
+      }
+      header img {
+        vertical-align: middle;
+      }
+      header ul {
+        display: flex;
+      }
+      header li {
+        margin-right: 20px;
+      }
+      header a {
+        display: block;
+        line-height: 80px;
+        font-size: 18px;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="banner">
+        <img src="headerLogo.png" alt="headerLogo" />
+        <h1>今天是個吃甜點的好日子</h1>
+      </div>
+      <header>
+        <a href="javascript:;">
+          <img src="footerLogo.png" alt="footerLogo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="javascript:;">回首頁</a></li>
+            <li><a href="javascript:;">關於我們</a></li>
+            <li><a href="javascript:;">產品介紹</a></li>
+            <li><a href="javascript:;">聯絡我們</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>

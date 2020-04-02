@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂單明細</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <style>
+      body {
+        background-color: #999;
+      }
+      .wrap {
+        width: 300px;
+      }
+      .order {
+        margin-bottom: 16px;
+        color: #839987;
+        background-color: #fff;
+      }
+      .highlight {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 12px;
+      }
+      .order h2 {
+        font-size: 26px;
+        font-weight: 900;
+        padding: 21px 0 26px;
+        text-align: center;
+        background-color: #e7eeea;
+      }
+      .order ul {
+        border: 1px solid #eee;
+        padding: 18px 12px;
+      }
+      .order li {
+        display: flex;
+        justify-content: space-between;
+      }
+      .order li + li {
+        margin-top: 18px;
+      }
+      .order li.highlight {
+        margin-top: 22px;
+      }
+      .order img {
+        margin-right: 18px;
+      }
+      .order .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="order">
+        <h2>訂單摘要</h2>
+        <ul>
+          <li>
+            <p>小計</p>
+            <p>NT$ 2,700</p>
+          </li>
+          <li>
+            <p>運費</p>
+            <p>NT$ 300</p>
+          </li>
+          <li class="highlight">
+            <p>總計</p>
+            <p>NT$ 3,000</p>
+          </li>
+        </ul>
+      </div>
+      <div class="order">
+        <h2>購物清單</h2>
+        <ul>
+          <li>
+            <img src="pic.png" alt="product" />
+            <div class="content">
+              <p>焦糖瑪卡龍 (2)</p>
+              <p class="highlight">NT$ 900</p>
+            </div>
+          </li>
+          <li>
+            <img src="pic.png" alt="product" />
+            <div class="content">
+              <p>焦糖瑪卡龍 (2)</p>
+              <p class="highlight">NT$ 900</p>
+            </div>
+          </li>
+          <li>
+            <img src="pic.png" alt="product" />
+            <div class="content">
+              <p>焦糖瑪卡龍 (2)</p>
+              <p class="highlight">NT$ 900</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
