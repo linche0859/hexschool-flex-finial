@@ -44,20 +44,17 @@
       section .content {
         display: flex;
         flex-direction: column;
-        position: relative;
+        justify-content: space-between;
+        padding-top: 23px;
       }
-      section .content h1 {
-        margin: 23px 0 25px;
+      section article h1 {
+        margin-bottom: 25px;
         font-weight: 900;
         font-size: 24px;
       }
-      section .content p {
+      section article p {
         line-height: 1.5;
         text-align: justify;
-      }
-      .link-group {
-        position: absolute;
-        bottom: 0;
       }
       .link-group a {
         color: #37523d;
@@ -73,7 +70,7 @@
   <body>
     <div class="wrap">
       <header>
-        <a href="javascript:;"><img src="logo.png" alt="logo"/></a>
+        <a href="javascript:;"><img src="logo.png" alt="logo" /></a>
         <a href="javascript:;">more</a>
       </header>
       <section>
@@ -81,16 +78,18 @@
           <img src="pic.png" alt="product" />
         </aside>
         <div class="content">
-          <h1>想吃甜點　是不需要理由的。</h1>
-          <p>
-            青山依舊在，幾度夕陽紅。 慣看秋月春風，一壺濁酒喜相逢，
-            浪花掏盡英雄，是非成敗轉頭空， 滾滾長江東逝水，白髮漁樵江渚上，
-            古今多少事，都付笑談中。
-          </p>
-          <p>
-            是非成敗轉頭空， 滾滾長江東逝水，白髮漁樵江渚上，
-            古今多少事，都付笑談中。
-          </p>
+          <article>
+            <h1>想吃甜點　是不需要理由的。</h1>
+            <p>
+              青山依舊在，幾度夕陽紅。 慣看秋月春風，一壺濁酒喜相逢，
+              浪花掏盡英雄，是非成敗轉頭空， 滾滾長江東逝水，白髮漁樵江渚上，
+              古今多少事，都付笑談中。
+            </p>
+            <p>
+              是非成敗轉頭空， 滾滾長江東逝水，白髮漁樵江渚上，
+              古今多少事，都付笑談中。
+            </p>
+          </article>
           <div class="link-group">
             <a href="javascript:;" class="active">FB 分享</a>
             <a href="javascript:;">IG 分享</a>
